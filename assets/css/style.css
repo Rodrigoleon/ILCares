@@ -1,0 +1,623 @@
+::selection {
+  background: #00bfff; /* Safari */
+  }
+::-moz-selection {
+  background: #00bfff; /* Firefox */
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../img/fonts/icomoon.eot');
+  src:url('../img/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../img/fonts/icomoon.woff') format('woff'),
+    url('../img/fonts/icomoon.ttf') format('truetype'),
+    url('../img/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-facebook, .icon-google-plus, .icon-feed, .icon-html5, .icon-css3, .icon-twitter, .icon-youtube, .icon-chrome, .icon-firefox, .icon-IE, .icon-opera, .icon-safari, .icon-iglogo, .icon-linkedin, .icon-paypal, .icon-play, .icon-pause, .icon-stop, .icon-backward, .icon-forward, .icon-shield {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+  content: "\66";
+}
+.icon-google-plus:before {
+  content: "\67";
+}
+.icon-feed:before {
+  content: "\72";
+}
+.icon-html5:before {
+  content: "\35";
+}
+.icon-css3:before {
+  content: "\33";
+}
+.icon-twitter:before {
+  content: "\74";
+}
+.icon-youtube:before {
+  content: "\79";
+}
+.icon-chrome:before {
+  content: "\63";
+}
+.icon-firefox:before {
+  content: "\46";
+}
+.icon-IE:before {
+  content: "\65";
+}
+.icon-opera:before {
+  content: "\6f";
+}
+.icon-safari:before {
+  content: "\73";
+}
+.icon-iglogo:before {
+  content: "\49";
+}
+.icon-linkedin:before {
+  content: "\6c";
+}
+.icon-paypal:before {
+  content: "\70";
+}
+.icon-play:before {
+  content: "\50";
+}
+.icon-pause:before {
+  content: "\3d";
+}
+.icon-stop:before {
+  content: "\53";
+}
+.icon-backward:before {
+  content: "\3c";
+}
+.icon-forward:before {
+  content: "\3e";
+}
+.icon-shield:before {
+  content: "\56";
+}
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+
+    .marketing .span2 {
+      text-align: center;
+    }
+
+    .marketing .span2 span {
+      font-size: 8em;
+      text-align: center;
+    }
+
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      max-width: 50%;
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+
+    /* Sticky footer styles
+    -------------------------------------------------- */
+
+    html,
+    body {
+      height: 100%;
+      color: #5a5a5a;
+      background: url(../img/subtle_white_feathers.png) repeat center center;
+      /* The html and body elements cannot have any padding or margin. */
+    }
+
+    a{
+      color: #00bfff;
+    }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      /* Negative indent footer by it's height */
+      margin: 0 auto -420px;
+    }
+
+    /* Set the fixed height of the footer here */
+    #push {
+      height: 100px;
+    }
+    #footer {
+      color: #999;
+      height: 400px;
+      background-color: #f5f5f5;
+      padding-top: 20px;
+      background: url(../img/footer.png) repeat top center;
+    }
+
+    #footer h3{
+      font-weight: normal;
+    }
+
+    /* Custom CSS
+    -------------------------------------------------- */
+
+    .navbar-wrapper{
+      position: fixed;
+    }
+
+    .brand span{
+      color: #00bfff;
+      font-size: 1em;
+      margin-right: 10px;
+    }
+
+    .credit{
+      margin-top: 46px;
+      text-align: center;
+    }
+
+    .credit span{
+      font-size: 8em;
+      color: #00bfff;
+    }
+
+    .social-icons{
+      margin-top: 10px;
+    }
+
+    .social-icons a{
+      display: block;
+      float: left;
+      list-style: none;
+      font-size: 2em;
+      background: #2a2a2a;
+      margin: 0 10px 10px 0;
+      padding: 12px;
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      border-radius: 500px;
+      color: #444;
+      -webkit-transition: all 0.3s ease-in;  /* Chrome 1-25, Safari 3.2+ */
+      -moz-transition: all 0.3s ease-in;  /* Firefox 4-15 */
+      -o-transition: all 0.3s ease-in;  /* Opera 10.50–12.00 */
+      transition: all 0.3s ease-in;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+      -moz-box-shadow:    inset 0 0 5px #222;
+      -webkit-box-shadow: inset 0 0 5px #222;
+      box-shadow:         inset 0 0 5px #222;
+      border: 1px solid #4D4D4D;
+    }
+
+    .social-icons a:hover{
+      background: #222222;
+      color: #00bfff;
+      text-decoration: none;
+      /*text-shadow:1px 1px 1px #5CACEE;
+      text-shadow:-1px 1px 4px #42c0fb,1px -1px 4px #42c0fb;*/
+      -moz-box-shadow:    inset 0 0 5px #000000;
+      -webkit-box-shadow: inset 0 0 5px #000000;
+      box-shadow:         inset 0 0 5px #000000;
+      border: 1px solid #555;
+    }
+
+    #footer .img-polaroid{
+      margin-right: 10px;
+    }
+
+    .carousel-caption{
+      background-color: #222; 
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+
+/***********************************************************************************************/
+/* Button */
+/***********************************************************************************************/
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+
+  /*background-color: #1b1b1b;
+  background-image: -moz-linear-gradient(top, #222, #111);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#222),to(#111));
+  background-image: -webkit-linear-gradient(top, #222, #111);
+  background-image: -o-linear-gradient(top, #222, #111);
+  background-image: linear-gradient(to bottom, #222, #111);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff111111',GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #222;*/
+}
+
+.jumbotron{
+position: relative;
+padding: 90px 0;
+color: #fff;
+text-shadow: 0 1px 3px 
+rgba(0,0,0,.4), 0 0 30px 
+rgba(0,0,0,.075);
+background: #020031;
+background: -moz-linear-gradient(45deg, #020031 0%, #00bfff 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #00bfff));
+background: -webkit-linear-gradient(45deg, #020031 0%, #00bfff 100%);
+background: -o-linear-gradient(45deg, #020031 0%, #00bfff 100%);
+background: -ms-linear-gradient(45deg, #020031 0%, #00bfff 100%);
+background: linear-gradient(45deg, #020031 0%, #00bfff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#00bfff',GradientType=1 );
+-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+.jumbotron::after{
+  content: '';
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: url(../img/masthead.png) repeat center center;
+opacity: .4;
+}
+
+.tab-content img{
+  margin-right: 20px;
+}
+
+/* CSS Comment Separator
+-------------------------------------------------- */
+#nav{
+  list-style: none;
+  position: fixed;
+  right: 20px;
+  z-index: 200;
+}
+
+#nav li{
+  margin: 0 0 15px 0; 
+}
+
+#intro, #second{
+  width: 100%;
+}
+
+#intro{
+  background:url(../img/parallax/id.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#second{
+  background: url(../img/parallax/pf.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+#second .bg{
+  background: url(../img/parallax/fry.png) 80% 0 no-repeat fixed;
+  height: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 900px;
+  /*z-index: 200;*/
+  right: 0;
+}
+
+#third{
+  background: url(../img/parallax/ec.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 650px;
+  padding: 100px 0 0 0; 
+}
+
+#fifth{
+  height: 560px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+#intro, #second .container{
+  padding-top: 50px;
+}
+
+.blue-constrast{
+  background-color: #222; 
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+    @media (max-width: 767px) {
+      #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #434343;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      #footer .ingrid-foot {
+        display: none;
+      }
+      #footer h3{
+        display: none;
+      }
+      .jumbotron {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }  
